@@ -4,11 +4,10 @@ const messageOne = document.getElementById('message-1')
 const messageTwo = document.getElementById('message-2')
 
 document.getElementById('currentLocation').addEventListener('click', (e) => {
-    messageOne.innerHTML = '<p class="info">Loading...</p>'
+    messageOne.innerHTML = '<p class="info">Detecting location...</p>'
     messageTwo.innerHTML = ''
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition((position) => {
-
             fetch('http://localhost:3000/weather/lat/'+position.coords.latitude+'/lon/'+position.coords.longitude).then( (response) => {
                 response.json().then( (data) => {
                     if(data.error)
