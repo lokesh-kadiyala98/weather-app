@@ -46,6 +46,25 @@ header a {
     transform: 2;
 }
 
+.form-group {
+    position: relative;
+    display: inline-flex;
+}
+
+.form-group i {
+    position: absolute;
+    right: 0;
+    padding: 3px;
+    font-size: 160%;
+    border: 1px solid;
+    color: #888888;
+    cursor: pointer;
+}
+
+.form-group i:hover {
+    color: black;
+}
+
 input {
     border: 1px solid #cccccc;
     padding: 8px;
@@ -66,9 +85,14 @@ button {
 }
  
 .info {
+    color: white;
+    background-color: #888888;
+}
+
+/* .info {
     color: #00529b;
     background-color: #bde5f8;
-}
+} */
  
 .success {
     color: #4f8a10;

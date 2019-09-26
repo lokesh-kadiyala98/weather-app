@@ -5,6 +5,7 @@
         <title>Weather</title>
         <link rel="stylesheet" href="/css/styles.css" />
         <link rel="icon" href="/img/icon.png" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
 
     <body>
@@ -14,7 +15,9 @@
             <p>Use this site to get your weather.</p>
 
             <form id="location-form">
-                <input id="location-search" placeholder="Location" />
+                <div class="form-group">
+                    <input id="location-search" placeholder="Location" /><i id="currentLocation" class="material-icons">my_location</i>
+                </div>
                 <button id="submit-button">Search</button>
             </form>
 
